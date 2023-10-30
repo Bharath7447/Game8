@@ -330,18 +330,19 @@ a{
 footer{
     padding: 20px 400px;
     background-color: rgb(9, 9, 48);
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr;
+    gap: 80px 55px;
 }
 .subscribe-note{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     background-color: rgb(124, 164, 52);
     padding: 20px;
     width: fit-content;
     border-radius: 9px;
-    gap: 60px;
-    margin-bottom: 80px;
+    grid-column: 1/-1;
 }
 .newsletter{
     background-color: rgb(124, 164, 52);
@@ -363,10 +364,7 @@ footer{
 .email{
     border: none;
     height: 20px;
-    background-color: #ffffff;
     color: #000;
-    border-radius: 10px;
-    border-top-color: #ffffff;
 }
 .subscribe-button{
     border: none;
@@ -392,6 +390,7 @@ footer{
 .heading{
     font-size: 18px;
     margin-bottom: 25px;
+    display: inline-block;
 }
 .game8-desc{
     font-size: 12px;
@@ -413,11 +412,17 @@ footer{
     color: green;
     margin-bottom: 5px;
 }
+.Help{
+    align-self: center;
+    display: inline;
+    width: fit-content;
+}
 .Help-list{
     list-style: none;
     font-size: 12px;
     line-height: 1.5;
     font-style: normal;
+    display: inline;
 }
 .Help-list li{
     margin-bottom: 10px;
